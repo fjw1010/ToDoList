@@ -12,6 +12,10 @@ function TodoForm({ setTodos }) {
       isDone: false,
     }
     setTodos((prev) => [...prev, newTodo])
+
+    // Todo를 등록 할 때마다 제목과 내용 input이 초기화 되게
+    setTitle("")
+    setContents("")
   }
   return (
     <form onSubmit={handleSubmit}>

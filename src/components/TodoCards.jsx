@@ -9,9 +9,9 @@ function TodoCards({ todos, title, toggleComplete, toggleDelete }) {
           return (
             <TodoCard
               key={todo.id}
-              id={todos.id}
-              title={todos.title}
-              contents={todos.contents}
+              id={todo.id}
+              title={todo.title}
+              contents={todo.contents}
               toggleComplete={toggleComplete}
               toggleDelete={toggleDelete}
             />

@@ -9,7 +9,7 @@ function App() {
   // 완료
   const toggleComplete = (id) => {
     setTodos((prev) => {
-      prev.map((todo) => {
+      return prev.map((todo) => {
         if (todo.id === id) {
           return { ...todo, isDone: !todo.isDone }
         }

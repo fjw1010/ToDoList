@@ -24,7 +24,7 @@ function App() {
   }
   return (
     <>
-      <div>
+      <div className="p-10">
         <Header />
         <main>
           <TodoForm setTodos={setTodos} />

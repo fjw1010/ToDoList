@@ -24,18 +24,18 @@ function App() {
   }
   return (
     <>
-      <div className="bg-slate-300 min-h-screen">
+      <div className="bg-[rgba(241,_245,_249,_0.4)] min-h-screen flex flex-col items-center">
         <Header />
         <main>
           <TodoForm setTodos={setTodos} />
           <TodoCards
-            title="🔥Working🔥"
+            title={<strong className="text-2xl">Working...🔥</strong>}
             todos={todos.filter((todo) => !todo.isDone)}
             toggleComplete={toggleComplete}
             toggleDelete={toggleDelete}
           />
           <TodoCards
-            title="✅Done✅"
+            title={<strong className="text-2xl">Done...🌟</strong>}
             todos={todos.filter((todo) => !!todo.isDone)}
             toggleComplete={toggleComplete}
             toggleDelete={toggleDelete}

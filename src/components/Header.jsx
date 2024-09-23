@@ -1,9 +1,9 @@
 function Header() {
-    return (
-        <header>
-            <strong>TO DO LIST</strong>
-        </header>
-    )
+  return (
+    <header className="text-4xl py-10">
+      <strong>TO DO LIST</strong>
+    </header>
+  )
 }
 
-export default Header;
+export default Header

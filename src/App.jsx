@@ -24,9 +24,9 @@ function App() {
   }
   return (
     <>
-      <div className="bg-[rgba(241,_245,_249,_0.4)] min-h-screen flex flex-col items-center">
+      <div className="bg-[rgba(241,_245,_249,_0.4)] min-h-screen">
         <Header />
-        <main>
+        <main className="w-[1152px] m-auto">
           <TodoForm setTodos={setTodos} />
           <TodoCards
             title={<strong className="text-2xl">Working...🔥</strong>}

@@ -7,6 +7,7 @@ function Header() {
           <a
             href="https://github.com/fjw1010"
             className="transition ease-in-out border rounded-md py-2 px-4 bg-white w-full hover:bg-gray-100 text-[##020817] text-sm cursor-pointer content-center"
+            target="_blank"
           >
             @fjw1010
           </a>

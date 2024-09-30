@@ -6,8 +6,7 @@ function TodoForm({ setTodos }) {
 
   const handleSubmit = (e) => {
     e.preventDefault()
-    // input에 아무런 값이 없을 경우에 등록 버튼을 눌렀을 때,
-    // 아무런 이벤트도 발생하지 않도록
+
     const newTodo = {
       id: crypto.randomUUID(),
       title: title,
@@ -50,7 +49,6 @@ function TodoForm({ setTodos }) {
         <button
           type="submit"
           className="transition ease-in-out rounded-md bg-black hover:bg-[#2f2f30] text-white text-base py-2 px-4"
-          // onChange={() => }
         >
           작성하기
         </button>
